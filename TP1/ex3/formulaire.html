@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>formulaire</title>
+</head>
+<body>
+	<div align="center">
+	<h1><b>Inscription en licence</b></h1>
+	<form>
+<fieldset>
+<legend align="center">Informations personnelles</legend>
+<label for="nom">Votre nom:</label>
+<input type="text" name="nom" id="nom" size =15 maxlength=30 placeholder="Votre nom ?"><br><br>
+<label for="prenom">Votre prénom:</label>
+<input type="text" name="prenom" id="prenom" size =15 maxlength=30 placeholder="Votre prenom ?"><br><br>
+<label for="date">Votre date de naissance :</label>
+<input type="date" name="date" id="date"><br><br>
+ <label for="email">Votre email :</label>
+ <input type="email" name="email" id="email" size=15 maxlength=30 placeholder="x@exemple.com"><br><br>
+
+
+<label for="age">Votre age:</label>
+<input type="number" name="age" id="age" size =15 maxlength=30 placeholder="Votre age ?">
+<br><br>
+<label for="url">Votre site :</label>
+<input type="url" name="url" id="url" size=25 maxlength=40 placeholder="http://www.exemple.com"><br><br>
+<label for="adresse">Votre adresse :</label>
+  <textarea name="adresse" id="adresse" rows=10 cols=15 
+placeholder="Votre adresse?"></textarea><br><br>
+<label for="passwd">Mot de passe :</label>
+<input required type="password" name="passwd" id="passwd" size=15 maxlength=30><br><br>
+<label for="passwd2"> Réecrire le mot de passe :</label>
+<input  required type="password" name="passwd2" id="passwd2" size=15 maxlength=30><br><br>
+</fieldset>
+<fieldset>
+<legend align="center">Gestion des groupes et des options</legend>
+<label for="groupe">Votre groupe :</label>
+<input type="radio" name="groupe" value="groupe1" checked>groupe 1
+<input type="radio" name="groupe" value="groupe2">groupe 2
+<input type="radio" name="groupe" value="groupe3">groupe 3<br><br>
+<label for="carte">Numéro de carte d'étudiant :</label>
+<input type="text"  name="carte" id="carte" size=25 maxlength=40 placeholder="Numéro de carte étudiant?"><br><br>
+<label for="select">Choisissez les options que vous désirez</label><br>
+<select name="select" size=5>
+<option value="J2ee">J2ee
+<option value="Android" selected>Android
+<option value=".Net">.Net
+<option value="HTML5">HTML5
+<option value="Flex">Flex	
+</select><br>
+pattern <input pattern="[I][N][S][A][T][0-9]{4}" >
+</fieldset><br>
+
+
+<input type="submit" value="Valider">
+<input type="reset" value="réinitialiser">
+
+</form>
+</div>
+</body>
+</html>
